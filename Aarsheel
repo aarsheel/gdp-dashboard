@@ -1,0 +1,23 @@
+ import streamlit as st
+
+st.title("A Special Question for You ❤️")
+
+st.subheader("Will you be mine?")
+
+if st.button("Yes ❤️"):
+    st.success("Yay! You made my day! 😊")
+
+st.subheader("Or...")
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    if st.button("No 😢"):
+        st.error("Oh no! Maybe next time? 😔")
+
+with col2:
+    if st.button("Pretty please? 🥺"):
+        st.warning("Think again! 💕")
+
+with col3:
+    if st.button("Try again 🔄"):
+        st.info("I'll wait... 😊")
